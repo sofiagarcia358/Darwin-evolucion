@@ -1,4 +1,4 @@
-.body18{
+.body18 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
@@ -7,172 +7,111 @@
     box-shadow: 2px 12px 15px 6px rgb(128, 82, 82);
     width: auto;
 }
-.titulo{
-    grid-column: 1/2;
-    grid-row: 1/2;
+
+.titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     text-align: center;
     font-size: 2.5rem;
     background-color: rgb(6, 87, 141);
     color: beige;
     border-radius: 2rem;
 }
-.titulo span{
+
+.titulo span {
     background-color: rgb(4, 87, 112);
     color: azure;
     border-radius: 2rem;
 }
-.titulo span:hover{
+
+.titulo span:hover {
     color: black;
     background-color: gray;
 }
-.arquitectura{
-    grid-column: 1/2;
-    grid-row: 2/3;
+
+.arquitectura {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     padding: 2rem 6rem;
     font-size: 1.8rem;
     color: white;
 }
-.p1sofia{
-    grid-column: 1/2;
-    grid-row: 1/2;
+
+.p1sofia, .p2sofia, .p3sofia, .p4sofia, .p5sofia {
+    width: 15rem;
+    box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.p1sofia {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     background-color: rgb(31, 97, 97);
-    box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
-    width: 15rem;
 }
-.img1{
+
+.img1, .img2, .img3, .img4, .img5 {
     width: 15rem;
     height: 8rem;
     padding: 1rem 2.5rem;
     box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
 }
-.p2sofia{
-    grid-column: 2/3;
-    grid-row: 1/2;
+
+.p2sofia {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     background-color: rgb(34, 58, 93);
-    box-shadow: 6px 8px 10px 6px rgb(46, 46, 46);
+}
 
-}
-.img2{
-    width: 15rem;
-    height: 8rem;
-    padding: 1.5rem 2.5rem;
-    box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
-}
-.p3sofia{
-    grid-column: 3/4;
-    grid-row: 1/2;
+.p3sofia {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
     background-color: rgb(10, 119, 57);
-    box-shadow: 6px 8px 10px 6px rgb(46, 46, 46);
+}
 
-}
-.img3{
-    width: 15rem;
-    height: 8rem;
-    padding: 1rem 2.5rem;
-    box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
-}
-.p4sofia{
-    grid-column: 1/2;
-    grid-row: 2/3;
+.p4sofia {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
     background-color: rgb(135, 68, 12);
-    box-shadow: 6px 8px 10px 6px rgb(46, 46, 46);
+}
 
-}
-.img4{
-    width: 15rem;
-    height: 8rem;
-    padding: 1.5rem 2.5rem;
-    box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
-}
-.p5sofia{
-    grid-column: 2/3;
-    grid-row: 2/3;
+.p5sofia {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     background-color: rgb(127, 156, 8);
-    box-shadow: 6px 8px 10px 6px rgb(46, 46, 46);
+}
 
-}
-.img5{
-    width: 15rem;
-    height: 8rem;
-    padding: 1rem 2.5rem;
-    box-shadow: 6px 10px 10px 6px rgb(46, 46, 46);
-}
-.p1sofia span:hover{
+.p1sofia span:hover, .p2sofia span:hover, .p3sofia span:hover {
     text-decoration: none;
-    color: tan;
+    color: rgb(32, 53, 214);
 }
-.p2sofia span:hover{
-    text-decoration: none;
-    color: tan;
-}
-.p3sofia span:hover{
-    text-decoration: none;
-    color: tan;
-}
-.p4sofia span:hover{
+
+.p4sofia span:hover, .p5sofia span:hover {
     text-decoration: none;
     color: rgb(17, 8, 142);
 }
-.p5sofia span:hover{
-    text-decoration: none;
-    color: rgb(17, 8, 142);
-}
-.info1 {
+
+.info1, .info2, .info3, .info4, .info5 {
     display: none;
     width: 15rem;
     height: auto;
-}
-.p1sofia:hover .info1 {
-    display: block;
     text-align: center;
     font-size: 1.5rem;
-}
-.info2{
-    display: none;
-    width: 15rem;
-}
-.p2sofia:hover .info2 {
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.info3 {
-    display: none;
-    width: 18rem;
 }
 
-.p3sofia:hover .info3 {
+.p1sofia:hover .info1, .p2sofia:hover .info2, .p3sofia:hover .info3, .p4sofia:hover .info4, .p5sofia:hover .info5 {
     display: block;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.info4{
-    display: none;
-    width: 15rem;
-    height: auto;
 }
 
-.p4sofia:hover .info4 {
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.info5 {
-    display: none;
-    width: 15rem;
-    height: auto;
+.p1sofia:hover, .p2sofia:hover, .p3sofia:hover, .p4sofia:hover, .p5sofia:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 15px 20px 6px rgb(46, 46, 46);
 }
 
-.p5sofia:hover .info5 {
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-}
 @media only screen and (max-width: 1024px) {
     .body18 {
         padding: 1rem;
